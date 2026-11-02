@@ -1,0 +1,49 @@
+
+<!-- Create a simple webpage using HTML5 Canvas to draw basic shapes such as a rectangle, circle, line, and text. Also create a simple SVG graphic representing a college logo or icon. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Canvas and SVG</title>
+</head>
+<body>
+
+    <h2>HTML5 Canvas Shapes</h2>
+
+    <canvas id="myCanvas" width="500" height="300"
+            style="border:1px solid black;">
+    </canvas>
+
+    <script>
+      var canvas = document.getElementById("myCanvas");
+      var ctx = canvas.getContext("2d");
+
+      // Draw Rectangle
+      ctx.fillStyle = "blue";
+      ctx.fillRect(70, 40, 150, 75);
+
+      // Draw Circle
+      ctx.beginPath();
+      ctx.arc(330, 77, 40, 0, 2 * Math.PI);
+      ctx.fillStyle = "red";
+      ctx.fill();
+
+      // Draw Line
+      ctx.beginPath();
+      ctx.moveTo(70, 170);
+      ctx.lineTo(430, 170);
+      ctx.stroke();
+
+      // Draw Text
+      ctx.font = "25px Arial";
+      ctx.fillStyle = "green";
+      ctx.textAlign = "center";
+      ctx.fillText("Welcome to College", 250, 230);
+  </script>
+
+    <h2>Marwari University Logo (SVG)</h2>
+
+    <img src="9. mu_logo_icon.svg" alt="Marwari University Logo" width="200">
+
+</body>
+</html>
