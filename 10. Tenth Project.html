@@ -1,0 +1,92 @@
+
+<!-- Create a college information webpage that displays its location using HTML5 Geolocation. Add an iframe containing a map or another relevant webpage and explain the purpose of using an iframe. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Information</title>
+</head>
+<body>
+
+    <h1>Marwari University</h1>
+
+    <p>
+        Marwari University is located on Rajkot-Morbi Road,
+        Gauridad, Rajkot, Gujarat - 360003.
+    </p>
+
+    <h3>College Location</h3>
+
+    <iframe
+        src="https://maps.google.com/maps?q=Marwadi%20University%20Rajkot&output=embed"
+        width="500"
+        height="300">
+    </iframe>
+
+    <p>
+        <a href="https://maps.app.goo.gl/74gcYFR9G2gPZu7Z6">
+            Open College Location in Google Maps
+        </a>
+    </p>
+
+    <h3>My Current Location</h3>
+
+    <button onclick="getLocation()">Show My Location</button>
+
+    <p id="location">Your location will appear here.</p>
+
+    <script>
+        function getLocation() {
+            var locationText = document.getElementById("location");
+
+            locationText.innerHTML = "Getting location...";
+
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(
+                    showPosition,
+                    showError,
+                    {
+                        enableHighAccuracy: true,
+                        timeout: 15000,
+                        maximumAge: 0
+                    }
+                );
+            } else {
+                locationText.innerHTML =
+                    "Geolocation is not supported by your browser.";
+            }
+        }
+
+        function showPosition(position) {
+            document.getElementById("location").innerHTML =
+                "Latitude: " + position.coords.latitude +
+                "<br>Longitude: " + position.coords.longitude;
+        }
+
+        function showError(error) {
+            if (error.code == 1) {
+                document.getElementById("location").innerHTML =
+                    "Location permission denied. Please allow location access.";
+            } else if (error.code == 2) {
+                document.getElementById("location").innerHTML =
+                    "Location is unavailable. Please turn on GPS.";
+            } else if (error.code == 3) {
+                document.getElementById("location").innerHTML =
+                    "Location request timed out. Please try again.";
+            } else {
+                document.getElementById("location").innerHTML =
+                    "Unable to get your location.";
+            }
+        }
+    </script>
+
+    <h3>Purpose of Iframe</h3>
+
+    <p>
+        An iframe is used to display another webpage or external
+        content inside the current webpage. Here, it is used
+        to display the Google Map of Marwari University.
+    </p>
+
+</body>
+</html>
