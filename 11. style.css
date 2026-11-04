@@ -1,0 +1,102 @@
+body {
+    background-color: #eef1f4;
+    font-family: Arial, sans-serif;
+    color: #333333;
+    margin: 30px;
+}
+
+/* Main Profile */
+.main {
+    background-color: white;
+    width: 90%;
+    margin: auto;
+    padding: 25px;
+    border: 1px solid #b8c2cc;
+    box-sizing: border-box;
+}
+
+/* Header */
+.header {
+    background-color: #263f55;
+    color: white;
+    text-align: center;
+    border: 1px solid #1b3042;
+    padding: 18px;
+    margin-bottom: 25px;
+}
+
+.header h1 {
+    color: white;
+    font-size: 28px;
+}
+
+.header h2 {
+    color: #e9c46a;
+}
+
+.header p {
+    color: #e8edf2;
+}
+
+/* Section Headings */
+h3 {
+    color: #263f55;
+    font-size: 19px;
+    text-align: left;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #999999;
+    padding: 8px 0;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th,
+td {
+    border: 1px solid #c5cdd4;
+    padding: 11px;
+    text-align: left;
+}
+
+th {
+    background-color: #438b91;
+    color: white;
+}
+
+td {
+    background-color: #f8fafb;
+}
+
+/* Lists */
+ul {
+    background-color: #f5f8f9;
+    border: 1px solid #c5d0d8;
+    padding: 15px 40px;
+    line-height: 1.8;
+}
+
+li {
+    color: #354b59;
+}
+
+/* Paragraphs */
+p {
+    line-height: 1.6;
+}
+
+/* Footer */
+.footer {
+    background-color: #263f55;
+    color: white;
+    text-align: center;
+    border-top: 3px solid #438b91;
+    margin-top: 30px;
+    padding: 12px;
+}
