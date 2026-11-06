@@ -1,0 +1,283 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f8fd;
+    color: #29384a;
+    margin: 0;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #102b50;
+    padding: 10px 0;
+}
+
+.navbar-brand {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.logo {
+    width: 54px;
+    height: 54px;
+    object-fit: contain;
+    margin-right: 12px;
+}
+
+.nav-link {
+    color: #ffffff;
+    margin-left: 10px;
+    padding: 9px 13px;
+}
+
+.nav-link:hover {
+    color: #f3c34f;
+}
+
+/* Header */
+.header {
+    background-image:
+        linear-gradient(to right, #e5f2ff 0%, #e5f2ff 32%, rgba(229, 242, 255, 0.88) 46%, rgba(229, 242, 255, 0.18) 76%, rgba(229, 242, 255, 0.05) 100%),
+        url("13. college.jpg");
+    background-position: center, right center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #17365d;
+    padding: 65px 0;
+    border-bottom: 4px solid #e5b63f;
+}
+
+.welcome-box {
+    max-width: 650px;
+}
+
+.welcome-label {
+    color: #b17b0b;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.header h1 {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 12px;
+}
+
+.tagline {
+    color: #28689f;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.tagline span {
+    color: #d49a1e;
+    padding: 0 5px;
+}
+
+.intro {
+    font-size: 17px;
+    line-height: 1.7;
+    max-width: 570px;
+    margin-top: 15px;
+}
+
+.explore-button {
+    display: inline-block;
+    background-color: #155b96;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.explore-button:hover {
+    background-color: #0d3d68;
+    color: white;
+}
+
+/* About Section */
+.about-section {
+    background-color: white;
+    padding: 38px 0;
+    border-bottom: 1px solid #dce6f0;
+}
+
+.small-heading {
+    color: #b17b0b;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin-bottom: 7px;
+}
+
+.about-section h2,
+.section-heading h2 {
+    color: #17365d;
+    font-weight: bold;
+}
+
+.about-text {
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 0;
+    padding-left: 22px;
+    border-left: 3px solid #e5b63f;
+}
+
+/* Courses Section */
+.section-space {
+    padding-top: 42px;
+    padding-bottom: 38px;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.section-heading > p:last-child {
+    color: #657487;
+}
+
+.course-box {
+    background-color: transparent;
+    border: 0;
+    border-left: 1px solid #c9d8e6;
+    border-radius: 0;
+    padding: 8px 22px 8px 24px;
+    height: 100%;
+}
+
+.course-box h3 {
+    color: #17649e;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.course-name {
+    color: #17365d;
+    font-weight: bold;
+    min-height: 42px;
+}
+
+.course-box p:last-child {
+    color: #5b6877;
+    line-height: 1.6;
+}
+
+/* Facilities Section */
+.facilities-section {
+    background-color: #e6f1fc;
+    padding: 48px 0 35px;
+}
+
+.card {
+    border: 1px solid #d2dfeb;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 3px 8px rgba(25, 55, 85, 0.08);
+}
+
+.card img {
+    height: 190px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card h4 {
+    color: #173f6b;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card p {
+    color: #5b6877;
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    background-color: #102b50;
+    color: white;
+    text-align: center;
+    padding: 28px 0;
+}
+
+.footer-logo {
+    width: 62px;
+    height: 62px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+footer h4 {
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.footer-tagline {
+    color: #f3c34f;
+    margin-bottom: 12px;
+}
+
+.footer-line {
+    width: 70px;
+    height: 3px;
+    background-color: #e5b63f;
+    margin: 15px auto;
+}
+
+footer p {
+    margin: 6px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 14px;
+    }
+
+    .logo {
+        width: 44px;
+        height: 44px;
+    }
+
+    .header {
+        padding: 45px 0;
+        background-image:
+            linear-gradient(rgba(229, 242, 255, 0.92), rgba(229, 242, 255, 0.92)),
+            url("13. college.jpg");
+        background-position: center;
+    }
+
+    .header h1 {
+        font-size: 30px;
+    }
+
+    .about-text {
+        padding-left: 14px;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 26px;
+    }
+
+    .tagline {
+        font-size: 16px;
+    }
+
+    .intro {
+        font-size: 15px;
+    }
+}

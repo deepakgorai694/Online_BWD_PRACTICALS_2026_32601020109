@@ -1,0 +1,177 @@
+<!-- Create a responsive college webpage containing a navigation bar, header, content sections, images, and footer. Use Bootstrap Grid to arrange the content for different screen sizes. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jamshedpur Institute of Technology</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="13. style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#home">
+                <img src="13. JIT Logo.png" alt="JIT Logo" class="logo">
+                <span>Jamshedpur Institute of Technology</span>
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#collegeMenu"
+                aria-controls="collegeMenu" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="collegeMenu">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="#home">Home</a>
+                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link" href="#courses">Courses</a>
+                    <a class="nav-link" href="#facilities">Facilities</a>
+                    <a class="nav-link" href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header id="home" class="header">
+        <div class="container">
+            <div class="welcome-box">
+                <p class="welcome-label">WELCOME TO JIT</p>
+                <h1>Build Your Future With Knowledge</h1>
+                <p class="tagline">Knowledge <span>•</span> Innovation <span>•</span> Excellence</p>
+                <p class="intro">
+                    Explore new opportunities, develop practical skills and
+                    prepare yourself for a brighter future.
+                </p>
+                <a href="#courses" class="explore-button">Explore Courses</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-4">
+                    <p class="small-heading">GET TO KNOW US</p>
+                    <h2>About Our Institute</h2>
+                </div>
+                <div class="col-12 col-md-8">
+                    <p class="about-text">
+                        Jamshedpur Institute of Technology (JIT) focuses on
+                        academic learning, skill development and innovation.
+                        Our aim is to provide students with a supportive
+                        environment where they can learn, explore and grow.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="container section-space">
+        <div class="section-heading">
+            <p class="small-heading">LEARN AND GROW</p>
+            <h2>Our Courses</h2>
+            <p>Choose a field that matches your interests and goals.</p>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-md-4 mb-4">
+                <div class="course-box">
+                    <h3>BCA</h3>
+                    <p class="course-name">Bachelor of Computer Applications</p>
+                    <p>Learn programming, computer fundamentals and web development.</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 mb-4">
+                <div class="course-box">
+                    <h3>BBA</h3>
+                    <p class="course-name">Bachelor of Business Administration</p>
+                    <p>Develop knowledge of business, management and communication.</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 mb-4">
+                <div class="course-box">
+                    <h3>B.Com</h3>
+                    <p class="course-name">Bachelor of Commerce</p>
+                    <p>Study accounting, finance, business and commerce.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facilities Section -->
+    <section id="facilities" class="facilities-section">
+        <div class="container">
+            <div class="section-heading">
+                <p class="small-heading">CAMPUS LIFE</p>
+                <h2>Our Facilities</h2>
+                <p>Spaces and resources to support everyday learning.</p>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="13. college.jpg" class="card-img-top"
+                            alt="College Campus">
+                        <div class="card-body">
+                            <h4>College Campus</h4>
+                            <p>A welcoming campus with a comfortable environment for learning and student activities.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="13. library.jpg" class="card-img-top"
+                            alt="College Library">
+                        <div class="card-body">
+                            <h4>Library</h4>
+                            <p>A collection of books and study materials to support reading, research and learning.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="13. computer-lab.jpg" class="card-img-top"
+                            alt="Computer Lab">
+                        <div class="card-body">
+                            <h4>Computer Lab</h4>
+                            <p>A practical learning space where students can improve their computer skills.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <img src="13. JIT Logo.png" alt="JIT Logo" class="footer-logo">
+            <h4>Jamshedpur Institute of Technology</h4>
+            <p class="footer-tagline">Knowledge • Innovation • Excellence</p>
+            <div class="footer-line"></div>
+            <p>Jamshedpur, Jharkhand</p>
+            <p>Email: info@jitcollege.edu.in</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
