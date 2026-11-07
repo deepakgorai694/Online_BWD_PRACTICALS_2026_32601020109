@@ -1,0 +1,77 @@
+<!-- Design a restaurant menu webpage using CSS and Bootstrap. Display food categories, food images, prices, and descriptions using Bootstrap cards/grid. Apply gradients, borders, and text effects to improve presentation. -->
+<!DOCTYPE html>
+<html>
+<head>
+<title>The Green Fork | Menu</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="14. style.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg">
+<div class="container">
+<a class="navbar-brand" href="#home"><span class="brand-mark">GF</span> The Green Fork</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu"><span class="navbar-toggler-icon"></span></button>
+<div class="collapse navbar-collapse" id="mainMenu">
+<div class="navbar-nav ms-auto">
+<a class="nav-link" href="#home">Home</a><a class="nav-link" href="#starters">Starters</a><a class="nav-link" href="#mains">Main Course</a><a class="nav-link" href="#desserts">Desserts</a>
+</div></div></div></nav>
+
+<header id="home" class="hero">
+<div class="container"><div class="hero-content">
+<p class="eyebrow">FRESH INGREDIENTS · GOOD FOOD</p>
+<h1>A little taste of<br><span>something special.</span></h1>
+<p class="hero-description">Simple ingredients, thoughtfully prepared. Find your next favourite dish at The Green Fork.</p>
+<a href="#starters" class="hero-button">View Our Menu</a>
+</div></div></header>
+
+<section class="menu-intro container">
+<p class="eyebrow">MADE FRESH EVERY DAY</p><h2>Good food, served with care.</h2>
+<p>Explore our selection of vegetarian favourites.</p>
+</section>
+
+<section id="starters" class="container menu-section">
+<div class="category-title"><div><p class="eyebrow">START HERE</p><h2>Starters</h2></div><p>Small bites, big flavours</p></div>
+<div class="row g-4">
+<div class="col-12 col-md-6 col-lg-4"><div class="food-card h-100">
+<img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=900" alt="Crispy potato fries">
+<div class="food-info"><div class="food-heading"><h3>Classic French Fries</h3><span>₹120</span></div><p>Golden potato fries served hot with our house tomato dip.</p></div></div></div>
+<div class="col-12 col-md-6 col-lg-4"><div class="food-card h-100">
+<img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=900" alt="Vegetable samosas">
+<div class="food-info"><div class="food-heading"><h3>Punjabi Veg Samosa</h3><span>₹80</span></div><p>Crisp pastry filled with spiced potatoes and green peas.</p></div></div></div>
+<div class="col-12 col-md-6 col-lg-4"><div class="food-card h-100">
+<img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=900" alt="Fresh vegetable salad">
+<div class="food-info"><div class="food-heading"><h3>Garden Fresh Salad</h3><span>₹110</span></div><p>Seasonal vegetables tossed with a light lemon dressing.</p></div></div></div>
+</div></section>
+
+<section id="mains" class="container menu-section">
+<div class="category-title"><div><p class="eyebrow">FROM OUR KITCHEN</p><h2>Main Course</h2></div><p>Comfort food for every day</p></div>
+<div class="row g-4">
+<div class="col-12 col-md-6 col-lg-4"><div class="food-card h-100">
+<img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=900" alt="Vegetarian burger">
+<div class="food-info"><div class="food-heading"><h3>Classic Veg Burger</h3><span>₹180</span></div><p>Vegetable patty with lettuce, tomato and creamy house sauce.</p></div></div></div>
+<div class="col-12 col-md-6 col-lg-4"><div class="food-card h-100">
+<img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=900" alt="Vegetable pizza">
+<div class="food-info"><div class="food-heading"><h3>Farmhouse Pizza</h3><span>₹260</span></div><p>Loaded with capsicum, onion, tomato and melted cheese.</p></div></div></div>
+<div class="col-12 col-md-6 col-lg-4"><div class="food-card h-100">
+<img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=900" alt="Vegetarian pasta">
+<div class="food-info"><div class="food-heading"><h3>Herb Cream Pasta</h3><span>₹220</span></div><p>Pasta in a smooth white sauce with herbs and vegetables.</p></div></div></div>
+</div></section>
+
+<section id="desserts" class="container menu-section">
+<div class="category-title"><div><p class="eyebrow">SAVE ROOM FOR</p><h2>Desserts</h2></div><p>A sweet ending</p></div>
+<div class="row g-4">
+<div class="col-12 col-md-6 col-lg-4"><div class="food-card h-100">
+<img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=900" alt="Ice cream dessert">
+<div class="food-info"><div class="food-heading"><h3>Ice Cream Sundae</h3><span>₹130</span></div><p>Vanilla ice cream finished with chocolate sauce and nuts.</p></div></div></div>
+<div class="col-12 col-md-6 col-lg-4"><div class="food-card h-100">
+<img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=900" alt="Chocolate cake">
+<div class="food-info"><div class="food-heading"><h3>Chocolate Cake</h3><span>₹150</span></div><p>Soft chocolate sponge layered with rich chocolate cream.</p></div></div></div>
+<div class="col-12 col-md-6 col-lg-4"><div class="food-card h-100">
+<img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=900" alt="Fresh fruit bowl">
+<div class="food-info"><div class="food-heading"><h3>Fresh Fruit Bowl</h3><span>₹140</span></div><p>A refreshing bowl of seasonal fruits, served chilled.</p></div></div></div>
+</div></section>
+
+<footer><div class="container"><h2>The Green Fork</h2><p>Fresh food. Honest flavours. Good moments.</p><p>Jamshedpur, Jharkhand</p></div></footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body></html>
