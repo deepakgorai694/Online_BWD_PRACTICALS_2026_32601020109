@@ -1,0 +1,40 @@
+<!-- Create a JavaScript program that accepts marks of different subjects, calculates total and percentage, and displays the result and grade. Use variables, operators, conditional statements, and functions. -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Marks Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="16. style.css">
+</head>
+<body>
+<div class="main-box">
+    <h1>Student Marks Calculator</h1>
+    <p class="intro">Enter your marks in each subject to calculate the result.</p>
+
+    <label for="studentName">Student Name</label>
+    <input type="text" id="studentName" placeholder="Enter student name">
+
+    <h2>Enter Subject Marks</h2>
+    <div class="marks-list">
+        <div><label for="subject1">English</label><input type="number" id="subject1" min="0" max="100" placeholder="Out of 100"></div>
+        <div><label for="subject2">Mathematics</label><input type="number" id="subject2" min="0" max="100" placeholder="Out of 100"></div>
+        <div><label for="subject3">Computer Fundamentals</label><input type="number" id="subject3" min="0" max="100" placeholder="Out of 100"></div>
+        <div><label for="subject4">Programming</label><input type="number" id="subject4" min="0" max="100" placeholder="Out of 100"></div>
+        <div><label for="subject5">Web Designing</label><input type="number" id="subject5" min="0" max="100" placeholder="Out of 100"></div>
+    </div>
+
+    <button onclick="calculateResult()">Calculate Result</button>
+    <p id="message"></p>
+
+    <div id="result" class="result-box">
+        <h2>Result</h2>
+        <p>Student Name: <span id="resultName">-</span></p>
+        <p>Total Marks: <span id="total">-</span> / 500</p>
+        <p>Percentage: <span id="percentage">-</span></p>
+        <p>Grade: <span id="grade">-</span></p>
+        <p>Result Status: <span id="status">-</span></p>
+    </div>
+</div>
+<script src="16. script.js"></script>
+</body>
+</html>
