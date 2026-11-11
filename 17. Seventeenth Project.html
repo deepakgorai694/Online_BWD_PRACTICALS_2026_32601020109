@@ -1,0 +1,35 @@
+<!-- Create a webpage that accepts a student's age, attendance percentage, and marks. Use JavaScript conditional statements to determine whether the student is eligible for an examination/admission. Display an appropriate message using a dialog box. -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Eligibility</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="17. style.css">
+</head>
+<body>
+
+    <h1>Student Eligibility Form</h1>
+    <p class="heading-text">Enter the details below to check eligibility.</p>
+
+    <div class="form-box">
+        <label for="studentName">Student Name</label>
+        <input type="text" id="studentName" placeholder="Enter your name">
+
+        <label for="age">Age</label>
+        <input type="number" id="age" placeholder="Enter your age">
+
+        <label for="attendance">Attendance Percentage</label>
+        <input type="number" id="attendance" placeholder="Enter attendance">
+
+        <label for="marks">Marks (Out of 100)</label>
+        <input type="number" id="marks" placeholder="Enter marks">
+
+        <button onclick="checkEligibility()">Check Eligibility</button>
+        <button class="clear" onclick="clearForm()">Clear</button>
+    </div>
+
+    <p class="note">Eligibility criteria: Minimum age 18 years, attendance 75% and marks 40.</p>
+
+    <script src="17. script.js"></script>
+</body>
+</html>
