@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+Practical 18:
+Create a webpage containing a list of subjects. Use JavaScript arrays and functions
+to display subject information when the user selects a subject. Use JavaScript
+events to make the webpage interactive.
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subject Information</title>
+    <link rel="stylesheet" href="18. style.css">
+</head>
+<body>
+    <h1>Subject Information</h1>
+    <p class="intro">BCA - Semester 1</p>
+
+    <main>
+        <label for="subjectList">Select a subject:</label>
+        <select id="subjectList">
+            <option value="">-- Choose Subject --</option>
+            <option value="0">Entrepreneurship</option>
+            <option value="1">Mathematics 1</option>
+            <option value="2">AOC</option>
+            <option value="3">Programming</option>
+            <option value="4">BWD Theory</option>
+            <option value="5">Environmental Studies</option>
+        </select>
+
+        <div id="subjectInfo">
+            <p>Select a subject from the list to see its information.</p>
+        </div>
+    </main>
+
+    <script src="18. script.js"></script>
+</body>
+</html>
