@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- Develop a student registration webpage using HTML, CSS, and JavaScript. Validate the user's name, email, password, gender, and other details before submission. Use functions and events to display validation messages. -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration | Marwadi University</title>
+    <link rel="stylesheet" href="19. style.css">
+</head>
+
+<body>
+    <header class="college-header">
+        <p class="university-name">MARWADI UNIVERSITY</p>
+        <p>Faculty of Computer Applications</p>
+        <p>Bachelor of Computer Applications (BCA) - Online</p>
+    </header>
+    <main>
+        <div class="form-heading">
+            <h1>Student Registration Form</h1>
+            <p>Academic Session 2026–27</p>
+        </div>
+        <form id="registrationForm" novalidate>
+            <h2>Personal Information</h2>
+            <label for="studentName">Full Name</label>
+            <input id="studentName" type="text" placeholder="Enter your full name"><small id="nameError"></small>
+            <label for="email">Email Address</label>
+            <input id="email" type="email" placeholder="example@email.com"><small id="emailError"></small>
+            <label for="password">Password</label>
+            <input id="password" type="password" placeholder="At least 6 characters"><small id="passwordError"></small>
+            <label>Gender</label>
+            <div class="choices">
+                <label><input type="radio" name="gender" value="Male"> Male</label>
+                <label><input type="radio" name="gender" value="Female"> Female</label>
+                <label><input type="radio" name="gender" value="Other"> Other</label>
+            </div><small id="genderError"></small>
+            <label for="dob">Date of Birth</label>
+            <input id="dob" type="date"><small id="dobError"></small>
+            <h2>Academic & Contact Details</h2>
+            <label for="city">City</label>
+            <input id="city" type="text" placeholder="Enter your city"><small id="cityError"></small>
+            <label for="course">Course</label>
+            <select id="course">
+                <option value="">-- Select Course --</option>
+                <option>BCA</option>
+                <option>BBA</option>
+                <option>B.Com</option>
+                <option>BA</option>
+            </select><small id="courseError"></small>
+            <label>Hobbies</label>
+            <div class="choices">
+                <label><input type="checkbox" name="hobby" value="Reading"> Reading</label>
+                <label><input type="checkbox" name="hobby" value="Sports"> Sports</label>
+                <label><input type="checkbox" name="hobby" value="Music"> Music</label>
+                <label><input type="checkbox" name="hobby" value="Designing"> Designing</label>
+            </div>
+            <label for="address">Address</label>
+            <textarea id="address" rows="3" placeholder="Enter your address"></textarea><small
+                id="addressError"></small>
+            <div class="buttons"><button type="submit">Submit Registration</button><button type="reset"
+                    class="reset">Clear Form</button></div>
+            <p id="formMessage" role="status"></p>
+        </form>
+        <section id="submittedDetails" hidden>
+            <h2>Registration Details</h2>
+            <div id="detailsText"></div>
+        </section>
+        <footer>Marwadi University | BCA - Semester 1 | Basic of Web Development</footer>
+    </main>
+    <script src="19. script.js"></script>
+</body>
+
+</html>
